@@ -1,0 +1,17 @@
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/launcher_icons/foreground.png" #ios
+  adaptive_icon_background: "{{ primary }}"
+  adaptive_icon_foreground: "assets/launcher_icons/foreground.png"
+  web:
+    generate: true
+    image_path: "assets/launcher_icons/foreground.png"
+    background_color: "{{ primary }}"
+    theme_color: "{{ primary }}"
+  windows:
+    generate: true
+    image_path: "assets/launcher_icons/foreground.png"
+  macos:
+    generate: true
+    image_path: "assets/launcher_icons/foreground.png"

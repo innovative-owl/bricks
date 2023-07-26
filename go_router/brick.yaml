@@ -1,0 +1,12 @@
+name: go_router
+description: A new brick created with the Mason CLI.
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.50 <0.1.0"
+
+vars:
+  projectName:
+    type: string
+    description: Project name
+    prompt: What is your flutter application name?
