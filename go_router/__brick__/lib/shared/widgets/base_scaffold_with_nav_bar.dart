@@ -25,7 +25,7 @@ class BaseScaffoldWithNavBar extends StatelessWidget {
 
   static int _calculateSelectedIndex(BuildContext context) {
     final route = GoRouterState.of(context);
-    final location = route.location;
+    final location = route.uri.toString();
     if (location.startsWith(HomeScreen.path)) {
       return 0;
     }

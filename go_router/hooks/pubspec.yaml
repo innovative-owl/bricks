@@ -1,0 +1,9 @@
+name: go_router_hooks
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  collection: ^1.18.0
+  mason: ">=0.1.0-dev.50 <0.1.0"
+  pub_updater: ^0.3.1

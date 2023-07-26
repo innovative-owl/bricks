@@ -9,7 +9,7 @@ Page<T> createPage<T>({
   required GoRouterState state,
   bool fullscreenDialog = false,
 }) {
-  final transition = state.queryParameters['transition'] ?? 'platform';
+  final transition = state.uri.queryParameters['transition'] ?? 'platform';
   final pageRouteType = PageRouteType.values.byName(transition);
 
   switch (pageRouteType) {
