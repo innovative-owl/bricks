@@ -1,12 +1,11 @@
 import 'package:mason/mason.dart';
+import 'package:mason_utils/utils/get_package_name.dart';
 
-void run(HookContext context) {
-  // Read vars.
-  final name = context.vars['name'];
+Future<void> run(HookContext context) async {
+  // parse "name: testing_site" from pubspec.yaml
+  final name = await getPackageName(context);
+  context.logger.info('Project name: $name');
 
-  // Use the `Logger` instance.
-  context.logger.info('Hello $name!');
-
-  // Update vars.
-  context.vars['current_year'] = DateTime.now().year;
+  // update context.vars['projectName'] with the value of "name: testing_site"
+  context.vars['projectName'] = name;
 }
